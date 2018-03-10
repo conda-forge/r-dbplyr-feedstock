@@ -33,6 +33,7 @@ requirements:
     - r-purrr
     - r-rlang >=0.1.0
     - r-tibble >=1.3.0.9007
+    - r-tidyselect
 
   run:
     - r-base
@@ -44,6 +45,7 @@ requirements:
     - r-purrr
     - r-rlang >=0.1.0
     - r-tibble >=1.3.0.9007
+    - r-tidyselect
 
 test:
   commands:
