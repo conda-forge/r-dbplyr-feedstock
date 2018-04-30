@@ -14,14 +14,16 @@ Summary: A 'dplyr' back end for databases that allows you to work with  remote d
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-dbplyr-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-dbplyr-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-dbplyr-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-dbplyr-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-dbplyr-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-dbplyr-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-dbplyr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-dbplyr-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-dbplyr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-dbplyr-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-dbplyr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-dbplyr-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-dbplyr/badges/version.svg)](https://anaconda.org/conda-forge/r-dbplyr)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-dbplyr/badges/downloads.svg)](https://anaconda.org/conda-forge/r-dbplyr)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--dbplyr-green.svg)](https://anaconda.org/conda-forge/r-dbplyr) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-dbplyr.svg)](https://anaconda.org/conda-forge/r-dbplyr) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-dbplyr.svg)](https://anaconda.org/conda-forge/r-dbplyr) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-dbplyr.svg)](https://anaconda.org/conda-forge/r-dbplyr) |
 
 Installing r-dbplyr
 ===================
