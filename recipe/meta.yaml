@@ -27,7 +27,7 @@ requirements:
     - r-base
     - r-dbi >=0.5
     - r-r6
-    - r-assertthat
+    - r-assertthat >=0.2.0
     - r-dplyr >=0.5.0.9004
     - r-glue
     - r-purrr
@@ -39,7 +39,7 @@ requirements:
     - r-base
     - r-dbi >=0.5
     - r-r6
-    - r-assertthat
+    - r-assertthat >=0.2.0
     - r-dplyr >=0.5.0.9004
     - r-glue
     - r-purrr
