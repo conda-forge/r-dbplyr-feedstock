@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.2.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/dbplyr_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/dbplyr/dbplyr_{{ version }}.tar.gz
-  sha256: 7b1e456a2d1056fa6284582cd82d2df66d06b3eea92e9995f5a91a45f246f69d
+  sha256: b348e7a02623f037632c85fb11be16c40c01755ae6ca02c8c189cdc192a699db
 
 build:
   number: 0
@@ -27,23 +27,25 @@ requirements:
     - r-base
     - r-dbi >=0.5
     - r-r6
-    - r-assertthat
+    - r-assertthat >=0.2.0
     - r-dplyr >=0.5.0.9004
     - r-glue
     - r-purrr
     - r-rlang >=0.1.0
     - r-tibble >=1.3.0.9007
+    - r-tidyselect
 
   run:
     - r-base
     - r-dbi >=0.5
     - r-r6
-    - r-assertthat
+    - r-assertthat >=0.2.0
     - r-dplyr >=0.5.0.9004
     - r-glue
     - r-purrr
     - r-rlang >=0.1.0
     - r-tibble >=1.3.0.9007
+    - r-tidyselect
 
 test:
   commands:
