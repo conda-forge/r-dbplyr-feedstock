@@ -1,4 +1,4 @@
-{% set version = "1.2.2" %}
+{% set version = '1.2.2' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -10,13 +10,13 @@ package:
 source:
   fn: dbplyr_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/dbplyr_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/dbplyr/dbplyr_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/dbplyr_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/dbplyr/dbplyr_{{ version }}.tar.gz
   sha256: 9d410bb0055fffe10f1f8da55a5b24d98322c7b571d74df61427d5888332bc48
 
 build:
-  number: 0
-  skip: true  # [win32]
+  merge_build_host: True  # [win]
+  number: 1
 
   rpaths:
     - lib/R/lib/
@@ -24,32 +24,35 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+
+  host:
     - r-base
-    - r-dbi >=0.5
-    - r-r6
+    - r-dbi >=0.7
+    - r-r6 >=2.2.2
     - r-assertthat >=0.2.0
-    - r-dplyr >=0.5.0.9004
-    - r-glue
-    - r-purrr
-    - r-rlang >=0.1.0
-    - r-tibble >=1.3.0.9007
-    - r-tidyselect
+    - r-dplyr >=0.7.4
+    - r-glue >=1.2.0
+    - r-purrr >=0.2.4
+    - r-rlang >=0.1.6
+    - r-tibble >=1.4.1
+    - r-tidyselect >=0.2.2
 
   run:
     - r-base
-    - r-dbi >=0.5
-    - r-r6
+    - r-dbi >=0.7
+    - r-r6 >=2.2.2
     - r-assertthat >=0.2.0
-    - r-dplyr >=0.5.0.9004
-    - r-glue
-    - r-purrr
-    - r-rlang >=0.1.0
-    - r-tibble >=1.3.0.9007
-    - r-tidyselect
+    - r-dplyr >=0.7.4
+    - r-glue >=1.2.0
+    - r-purrr >=0.2.4
+    - r-rlang >=0.1.6
+    - r-tibble >=1.4.1
+    - r-tidyselect >=0.2.2
 
 test:
   commands:
-    - $R -e "library('dbplyr')"  # [not win]
+    - $R -e "library('dbplyr')"           # [not win]
     - "\"%R%\" -e \"library('dbplyr')\""  # [win]
 
 about:
@@ -60,6 +63,8 @@ about:
     has a 'DBI' back end; more advanced features  require 'SQL' translation to be provided
     by the package author.
   license_family: MIT
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\MIT'  # [win]
 
 extra:
   recipe-maintainers:
@@ -67,3 +72,5 @@ extra:
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
+    - dbast
