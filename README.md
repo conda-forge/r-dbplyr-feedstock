@@ -14,9 +14,8 @@ Summary: A 'dplyr' back end for databases that allows you to work with  remote d
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-dbplyr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-dbplyr-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-dbplyr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-dbplyr-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-dbplyr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-dbplyr-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-dbplyr-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-dbplyr-feedstock)
 
 Current release info
 ====================
