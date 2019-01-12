@@ -1,13 +1,15 @@
 About r-dbplyr
 ==============
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: https://github.com/tidyverse/dbplyr
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: A 'dplyr' back end for databases that allows you to work with  remote database tables as if they are in-memory data frames. Basic features works with any database that has a 'DBI' back end; more advanced features  require 'SQL' translation to be provided by the package author.
+Summary: A 'dplyr' back end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a 'DBI' back end; more advanced features require 'SQL' translation to be provided by the package author.
 
 
 
@@ -103,3 +105,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@conda-forge/r](https://github.com/conda-forge/r/)
+
