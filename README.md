@@ -1,7 +1,7 @@
 About r-dbplyr
 ==============
 
-Home: https://github.com/tidyverse/dbplyr
+Home: https://dbplyr.tidyverse.org/, https://github.com/tidyverse/dbplyr
 
 Package license: MIT
 
