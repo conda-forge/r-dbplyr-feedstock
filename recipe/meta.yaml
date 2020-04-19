@@ -1,4 +1,4 @@
-{% set version = '1.4.2' %}
+{% set version = "1.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dbplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dbplyr/dbplyr_{{ version }}.tar.gz
-  sha256: b783f0da2c09a1e63f41168b02c0715b08820f02a351f7ab0aaa688432754de0
+  sha256: 69ac7b4022c691e3822fc73fabb3bf073405d5a433c52f5f0f98cf90a1d228ea
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -54,10 +54,9 @@ test:
 about:
   home: https://dbplyr.tidyverse.org/, https://github.com/tidyverse/dbplyr
   license: MIT
-  summary: A 'dplyr' back end for databases that allows you to work with remote database tables
-    as if they are in-memory data frames. Basic features works with any database that
-    has a 'DBI' back end; more advanced features require 'SQL' translation to be provided
-    by the package author.
+  license_file: LICENSE
+  summary: A 'dplyr' back end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any
+    database that has a 'DBI' back end; more advanced features require 'SQL' translation to be provided by the package author.
   license_family: MIT
 
 extra:
