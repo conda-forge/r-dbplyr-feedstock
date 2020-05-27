@@ -30,10 +30,13 @@ requirements:
     - r-assertthat >=0.2.0
     - r-dplyr >=0.8.0
     - r-glue >=1.2.0
+    - r-lifecycle
+    - r-magrittr
     - r-purrr >=0.2.5
     - r-rlang >=0.2.0
     - r-tibble >=1.4.2
     - r-tidyselect >=0.2.4
+    - r-blob >=1.2.0
   run:
     - r-base
     - r-dbi >=1.0.0
@@ -41,10 +44,13 @@ requirements:
     - r-assertthat >=0.2.0
     - r-dplyr >=0.8.0
     - r-glue >=1.2.0
+    - r-lifecycle
+    - r-magrittr
     - r-purrr >=0.2.5
     - r-rlang >=0.2.0
     - r-tibble >=1.4.2
     - r-tidyselect >=0.2.4
+    - r-blob >=1.2.0
 
 test:
   commands:
