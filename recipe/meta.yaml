@@ -1,4 +1,4 @@
-{% set version = "1.4.4" %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dbplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dbplyr/dbplyr_{{ version }}.tar.gz
-  sha256: a80179ab033fa0b7d6e0049ebf6168ad0230050a84c9842d417f197b4a0117ec
+  sha256: ecd71936ecfefbdda0fad24e52653ac9c0913e01126e467c92c8ba9de37b4069
 
 build:
   merge_build_host: true  # [win]
@@ -28,6 +28,7 @@ requirements:
     - r-dbi >=1.0.0
     - r-r6 >=2.2.2
     - r-assertthat >=0.2.0
+    - r-blob >=1.2.0
     - r-dplyr >=0.8.0
     - r-glue >=1.2.0
     - r-lifecycle
@@ -36,12 +37,13 @@ requirements:
     - r-rlang >=0.2.0
     - r-tibble >=1.4.2
     - r-tidyselect >=0.2.4
-    - r-blob >=1.2.0
+    - r-withr
   run:
     - r-base
     - r-dbi >=1.0.0
     - r-r6 >=2.2.2
     - r-assertthat >=0.2.0
+    - r-blob >=1.2.0
     - r-dplyr >=0.8.0
     - r-glue >=1.2.0
     - r-lifecycle
@@ -50,7 +52,7 @@ requirements:
     - r-rlang >=0.2.0
     - r-tibble >=1.4.2
     - r-tidyselect >=0.2.4
-    - r-blob >=1.2.0
+    - r-withr
 
 test:
   commands:
@@ -60,9 +62,11 @@ test:
 about:
   home: https://dbplyr.tidyverse.org/, https://github.com/tidyverse/dbplyr
   license: MIT
-  license_file: LICENSE
   summary: A 'dplyr' back end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a 'DBI' back end; more advanced features require 'SQL' translation to be provided by the package author.
   license_family: MIT
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
 
 extra:
   recipe-maintainers:
