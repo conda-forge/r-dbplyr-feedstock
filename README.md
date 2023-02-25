@@ -1,13 +1,17 @@
-About r-dbplyr
-==============
-
-Home: https://dbplyr.tidyverse.org/, https://github.com/tidyverse/dbplyr
-
-Package license: MIT
+About r-dbplyr-feedstock
+========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-dbplyr-feedstock/blob/main/LICENSE.txt)
 
+Home: https://dbplyr.tidyverse.org/
+
+Package license: MIT
+
 Summary: A 'dplyr' back end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a 'DBI' back end; more advanced features require 'SQL' translation to be provided by the package author.
+
+Development: https://github.com/tidyverse/dbplyr
+
+Documentation: https://dbplyr.tidyverse.org/reference/
 
 Current build status
 ====================
