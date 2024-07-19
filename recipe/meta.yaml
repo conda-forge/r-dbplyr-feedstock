@@ -1,6 +1,5 @@
 {% set version = "2.5.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-dbplyr
@@ -13,8 +12,7 @@ source:
   sha256: bb475bdbe89487b189ecc257b5c92007a7458803c81aa77bfc4ed46f5f24bcff
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
