@@ -1,4 +1,4 @@
-{% set version = "2.5.1" %}
+{% set version = "2.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/dbplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/dbplyr/dbplyr_{{ version }}.tar.gz
-  sha256: 95d54c6a29b17eb11e3939a1b96b821b083a74290c95e2d2ccc8b45e0cfb3d3d
+  sha256: 215ae869bcdfb55ea9391086a816185fdd7174579437252d5f96ba87ef6d3b89
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
